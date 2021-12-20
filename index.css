@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    background-color:rgba(26, 6, 6, 0.151);
+    height: auto;
+    
+
+
+}
+
+*{  font-family: 'Titillium Web', sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    height: auto;
+    background-color: rgba(18, 3, 11, 0.79);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+.logo{
+    margin: 0px 20px;
+    line-height: 3rem;
+}
+
+nav{
+    margin: 0px 20px;
+
+}
+nav ul li{
+
+    margin: 0px 20px;
+    line-height: 3rem;
+    display: inline-block;
+    margin-right: auto;
+
+}
+
+nav ul li a{
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.25s ease;
+}
+
+nav ul li a:hover, 
+nav ul li a:active{
+    color: rgba(255, 255, 255, 0.5) ;
+}
+
+.wrapper-hamburger{
+    display: none;
+}
+.hamburger{
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+.container-1{
+    background-color:rgba(255, 255, 255, 0.411);
+    border-radius: 6px;
+    margin: 2rem 1rem;
+    padding: 2rem;
+}
+
+.container-2{
+    background-color:rgba(255, 255, 255, 0.411);
+    border-radius: 6px;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.form-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.form-input input{
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-1 .btn-wrapper{
+    padding: 2rem 0;
+    text-align: center;
+}
+.result{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result p{
+    display: none;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+/* utility classes */
+
+.heading-1{
+    margin: 10px 10px 40px 10px;
+    text-align: center;
+}
+
+.para-1{
+
+    margin: 1rem 0;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.text-align{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.input-1{
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+    min-height: 1.5rem;
+    min-width: 200px;
+
+}
+
+.btn-1{
+    background-color: white;
+    border: none;
+    height: 46px;
+    width: 119px;
+    align-self: center;
+    border-radius: 2rem;
+    transition: background-color 0.5s ease;
+
+
+}
+
+.btn-1:hover{
+    background-color: rgba(70, 61, 61, 0.5) ;
+
+}
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 584px) {
+
+
+
+    
+    nav ul li{
+        display: none;
+        transition: 2s;
+    }
+    
+    .wrapper-hamburger{
+        display: block;
+        padding: 0.25rem 2rem;
+        
+    }
+    .hamburger{
+        display: block;
+        width: 35px;
+        background-color: white;
+        margin: 6px 0;
+        
+    }
+    header{
+        flex-direction: row;
+    }
+  }

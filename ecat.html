@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meritChecker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <label class="logo">MERITx</label>
+      <nav class="nav">
+        <ul class="navlist">
+            <li><a href="nust.html">NUST</a></li>
+            <li><a href="mdcat.html">MDCAT</a></li>
+            <li><a href="ecat.html">ECAT</a></li>
+            <li><a href="comsats.html">COMSATS</a></li>
+            <li><a href="about.html" class="active">ABOUT</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper-hamburger">
+
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </header>
+    <section>
+      <div class="container-1">
+        <h1 class="heading-1">Merit calculator</h1>
+        <p class="para-1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quas
+          sit nostrum maiores voluptatum! Illo id fuga similique, libero et
+          autem nemo nisi, mollitia reiciendis, quas voluptas? Laboriosam illo
+          saepe consectetur harum ea nesciunt distinctio, mollitia quasi
+          obcaecati? Eius reiciendis et rem Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Expedita ab commodi vero at? Soluta
+          facilis exercitationem inventore corrupti odio, quibusdam ea sunt sit,
+          culpa corporis quae reiciendis quaerat eos non fugiat incidunt ipsum.
+          Aliquid, corporis alias? Ex illo repellat rem aspernatur a molestiae
+          consectetur, dignissimos, sunt consequuntur optio dolores commodi
+          neque beatae iste qui culpa odit eum? culpa sapiente tempore!
+        </p>
+      </div>
+    </section>
+    <section>
+        <div class="container-2">
+            <form class="form-1" method="get" action="">
+                <!-- <div class="form-input" >
+                    <label class="text-align">Enter your SSC Marks: </label>
+                    <input class="input-1" id="SSCmarks" type="text" name="email" value="" placeholder="Enter SSC Marks">
+                </div> -->
+                <div class="form-input">
+                    <label class="text-align">Enter your FSC Marks: </label>
+                    <input  class="input-1" id="FSCmarks" type="text" name="email" value="" placeholder="Enter FSC Marks">
+                </div>
+                <div class="form-input">
+                    <label class="text-align">Enter your Entry test Percentage: </label>
+                    <input  class="input-1" id="entrytest" type="text" name="email" value="" placeholder="Enter Entry Test Marks">
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn-1" type="button" >Submit</button>
+                </div>
+                
+            </form>
+            <div class="result">
+                <h1 class="heading-1">
+                    RESULT
+                </h1>
+                <p class="para-1 percentageValue">
+                    Hello World
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector('.wrapper-hamburger')
+hamburger.addEventListener('click', opennav)
+
+var checker = false
+
+function opennav(){
+    var width = window.innerWidth
+
+    const ul = (document.querySelector('.navlist').children)
+    if (checker==false){
+        for (let i = 0; i<ul.length; i++){
+            ul[i].style.display = 'block'
+
+        }
+        checker=true}
+    else{
+        for (let i = 0; i<ul.length; i++){
+            ul[i].style.display = 'none'
+
+        }
+        checker=false
+    }
+}
+
+
+function changeul(){
+    if (window.innerWidth>590){
+        const ul = (document.querySelector('.navlist').children)
+        for (let i = 0; i<ul.length; i++){
+            ul[i].style.display = 'inline-block'
+
+        }
+    
+    }
+    else if(window.innerWidth<590){
+        console.log(window.innerWidth)
+        const ul = (document.querySelector('.navlist').children)
+        for (let i = 0; i<ul.length; i++){
+            ul[i].style.display = 'none'
+
+        }
+    }
+}
+
+window.addEventListener('resize', changeul)
+
+const btn = document.querySelector('.btn-1');
+btn.addEventListener('click', printer)
+
+function printer(){
+    // const ssc = document.querySelector('#SSCmarks').value
+    const fsc = document.getElementById('FSCmarks').value
+    const entrytest = document.getElementById('entrytest').value
+    console.log(isNaN(fsc), isNaN(entrytest))
+    if(1100>fsc>0 && 100>entrytest>0 && isNaN(fsc)==false && isNaN(entrytest)==false ){
+    const hidden = document.querySelector('.percentageValue')
+    hidden.innerHTML = 'Your aggregate is '+(((fsc/1100)*100)*0.30 +  entrytest*0.70 ).toFixed(4)
+    hidden.style.display = 'block'}
+    else{
+        alert('Please Enter correct values! ')
+        
+    }
+}
+    </script>
+  </body>
+</html>

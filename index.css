@@ -76,7 +76,7 @@ nav ul li a:active{
     margin: 2rem 1rem;
     padding: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -109,6 +109,9 @@ nav ul li a:active{
     display: none;
     font-weight: bolder;
     font-size: x-large;
+    max-width: 262px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* utility classes */
@@ -186,4 +189,6 @@ nav ul li a:active{
     header{
         flex-direction: row;
     }
+
+
   }

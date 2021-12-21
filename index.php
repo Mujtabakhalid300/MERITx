@@ -46,7 +46,7 @@
       </div>
     </section>
     <section>
-        <div class="container-2">
+        <div class="container-2" style="flex-direction: column;">
             <form class="form-1" method="get" action="">
                 <div class="form-input" >
                     <label class="text-align">Enter your FSC Marks: </label>

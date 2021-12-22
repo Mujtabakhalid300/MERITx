@@ -10,7 +10,7 @@ function printer(){
     console.log(isNaN(fsc), isNaN(entrytest))
     if(1100>fsc>0 && 100>entrytest>0 && isNaN(fsc)==false && isNaN(entrytest)==false ){
     const hidden = document.querySelector('.percentageValue')
-    hidden.innerHTML = 'Your aggregate is '+(((fsc/1100)*100)*0.5 +  entrytest/2).toFixed(4)
+    hidden.innerHTML = 'Your aggregate is '+(((fsc/1100)*100)*0.5 +  entrytest/2).toFixed(4) + "%"
     hidden.style.display = 'block'}
     else{
         alert('Please Enter correct values! ')

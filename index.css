@@ -131,14 +131,16 @@ nav ul li a:active{
 .text-align{
     text-align: center;
     padding: 1rem 0;
+    font-weight: bolder;
 }
 
 .input-1{
     text-align: center;
     border: none;
     border-radius: 2rem;
-    min-height: 1.5rem;
-    min-width: 200px;
+    min-height: 2.5rem;
+    min-width: 300px;
+    box-shadow: 0rem 0.1rem rgba(2, 0, 1, 0.25);
 
 }
 
@@ -149,13 +151,18 @@ nav ul li a:active{
     width: 119px;
     align-self: center;
     border-radius: 2rem;
-    transition: background-color 0.5s ease;
+    box-shadow: 0rem 0.1rem rgba(2, 0, 1, 0.25);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bolder;
+
 
 
 }
 
 .btn-1:hover{
     background-color: rgba(70, 61, 61, 0.5) ;
+    transform: translate(0px,-5px);
 
 }
 

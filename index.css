@@ -89,10 +89,7 @@ nav ul li a:active{
 
 }
 
-.form-input input{
-    max-width: 500px;
-    margin: auto;
-}
+
 
 .form-1 .btn-wrapper{
     padding: 2rem 0;
@@ -139,7 +136,8 @@ nav ul li a:active{
     border: none;
     border-radius: 2rem;
     min-height: 2.5rem;
-    min-width: 300px;
+    width: 300px;
+    margin: auto;
     box-shadow: 0rem 0.1rem rgba(2, 0, 1, 0.25);
 
 }
@@ -197,5 +195,51 @@ nav ul li a:active{
         flex-direction: row;
     }
 
+
+  }
+
+  @media screen and (max-width: 500px){
+      
+
+    .input-1{
+        text-align: center;
+        border: none;
+        border-radius: 2rem;
+        min-height: 2.5rem;
+        width: 200px;
+        margin: auto;
+        box-shadow: 0rem 0.1rem rgba(2, 0, 1, 0.25);
+    
+    }
+
+  }
+
+  @media screen and (max-width: 350px){
+
+    .input-1{
+        text-align: center;
+        border: none;
+        border-radius: 2rem;
+        min-height: 2.5rem;
+        width: 150px;
+        margin: auto;
+        box-shadow: 0rem 0.1rem rgba(2, 0, 1, 0.25);
+    
+    }
+
+  }
+
+  @media screen and (max-width: 280px){
+
+    .input-1{
+        text-align: center;
+        border: none;
+        border-radius: 2rem;
+        min-height: 2.5rem;
+        width: 100px;
+        margin: auto;
+        box-shadow: 0rem 0.1rem rgba(2, 0, 1, 0.25);
+    
+    }
 
   }

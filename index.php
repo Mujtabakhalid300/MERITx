@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <label class="logo">MERITx</label>
+      <a class="logo" href="index.php">MERITx</a>
       <nav class="nav">
         <ul class="navlist">
           <li><a href="nust.html">NUST</a></li>
